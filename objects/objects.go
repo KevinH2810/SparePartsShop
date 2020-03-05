@@ -10,13 +10,17 @@ type (
 	}
 
 	Item struct {
-		ID                  int    `json:"id"`
-		Nama                string `json:"nama"`
-		Code                string `json:"code"`
-		Jenis               string `json:"jenis"`
-		CompanyManufacturer string `json:"company"`
-		BuyPrice            int    `json:"buyprice"`
-		SellPrice1          int    `json:"sellprice1"`
-		SellPrice2          int    `json:"sellprice2"`
+		ID         int    `json:"id"`
+		Nama       string `json:"nama"`
+		Code       string `json:"code"`
+		Jenis      string `json:"jenis"`
+		Company    string `json:"company"`
+		BuyPrice   int    `json:"buyprice"`
+		SellPrice1 int    `json:"sellprice1"`
+		SellPrice2 int    `json:"sellprice2"`
+	}
+
+	ItemArr struct {
+		Items []Item
 	}
 )
